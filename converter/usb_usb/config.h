@@ -21,13 +21,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x005B
-#define DEVICE_VER      0x0815
-#define MANUFACTURER    TMK
+#define DEVICE_VER      0x0814
+#define MANUFACTURER    t.m.k.
 #define PRODUCT         USB to USB keyboard converter
 
 
 #define DESCRIPTION     Product from t.m.k. keyboard firmware project
 
+
+#define MOUSEKEY_DELAY 30 // Delay between pressing a movement key and cursor movement
+#define MOUSEKEY_INTERVAL 20 // Time between cursor movements in milliseconds
+#define MOUSEKEY_MOVE_DELTA 4 // Step size
+#define MOUSEKEY_MAX_SPEED 10 // Maximum cursor speed at which acceleration stops
+#define MOUSEKEY_TIME_TO_MAX 20 // Time until maximum cursor speed is reached
+/* Scroll: */
+#define MOUSEKEY_WHEEL_DELAY 300 // Delay between pressing a wheel key and wheel movement
+#define MOUSEKEY_WHEEL_INTERVAL 100 // Time between wheel movements
+#define MOUSEKEY_WHEEL_MAX_SPEED 8 // Maximum number of scroll steps per scroll action
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 40 // Time until maximum scroll speed is reached
 
 /* matrix size */
 #define MATRIX_ROWS 16
